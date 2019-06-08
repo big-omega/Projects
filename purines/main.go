@@ -95,11 +95,13 @@ This program is used to find all strings consists of 'A', 'T', 'G', 'C' of lengt
 */
 func main() {
 	t1 := time.Now()
-	start := 0x0101ababab
-	end := 0x0101ababab + 100
+	// start := 0x0101ababab
+	// end := 0x0101ababab + 100
+	start := 0
+	end := 1 << uint(2*ell)
 	total := 0
 
-	numberGoRoutines := 10
+	numberGoRoutines := 100
 	taskLoad := (end - start) / numberGoRoutines
 
 	wg.Add(numberGoRoutines + 1)
