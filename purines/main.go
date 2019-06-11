@@ -110,7 +110,7 @@ func subsets() []Pair {
 
 // merge is responsible for find all valid combinations
 // it merge two strings of length 10 in to a string of length 20
-// and find all valid ones fullfilling the following constraints:
+// and find all valid ones fulfilling the following constraints:
 // 1) it contains no "AAAA", "TTTT", "GGGG", "CCCC" substrings
 // 2) the number of character 'C' and 'G' should be in the range [12, 14]
 // final results are written in to a given file
@@ -169,7 +169,7 @@ func merge(src []Pair, start, end int, file *os.File, ch chan<- int) {
 }
 
 // This program is used to find all strings of length 20 consisting of 'A', 'T', 'G', 'C'
-// each valid one should fullfill the following requirements:
+// each valid one should fulfill the following requirements:
 // 1) the number of 'C' and 'G' is no less than 12 and no more than 14
 // 2) it contains no substrings like "AAAA", "TTTT", "GGGG", and "CCCC"
 
